@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseTextViewWithDate" customModule="Profile" customModuleProvider="target">
+            <connections>
+                <outlet property="generic_textField" destination="517-43-YWX" id="oqB-J9-JCY"/>
+                <outlet property="mainView" destination="iN0-l3-epB" id="XAC-Nm-e6s"/>
+                <outlet property="sView" destination="XQW-fh-iAK" id="fUz-fc-QNx"/>
+                <outlet property="title_lbl" destination="mxF-Lm-IXN" id="UWM-3D-wR3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="1" translatesAutoresizingMaskIntoConstraints="NO" id="mxF-Lm-IXN">
+                    <rect key="frame" x="10" y="12" width="394" height="18"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="ZQ2-TU-xig"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XQW-fh-iAK">
+                    <rect key="frame" x="10" y="42" width="394" height="6"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="517-43-YWX" userLabel="Text Field">
+                            <rect key="frame" x="10" y="0.0" width="8" height="6"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uai-rn-USL">
+                            <rect key="frame" x="364" y="-9.5" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="Bpn-XJ-gyi"/>
+                                <constraint firstAttribute="width" constant="25" id="rvL-7n-wUb"/>
+                            </constraints>
+                            <state key="normal" image="calendar"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82C-eB-YSm">
+                            <rect key="frame" x="0.0" y="0.0" width="394" height="6"/>
+                            <connections>
+                                <action selector="calendarClicked:" destination="-1" eventType="touchUpInside" id="R8r-cR-6fe"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="82C-eB-YSm" firstAttribute="leading" secondItem="XQW-fh-iAK" secondAttribute="leading" id="ERV-vj-ZDR"/>
+                        <constraint firstAttribute="bottom" secondItem="517-43-YWX" secondAttribute="bottom" id="GYI-Hi-j0G"/>
+                        <constraint firstItem="517-43-YWX" firstAttribute="leading" secondItem="XQW-fh-iAK" secondAttribute="leading" constant="10" id="NyN-mb-WhT"/>
+                        <constraint firstItem="uai-rn-USL" firstAttribute="centerY" secondItem="XQW-fh-iAK" secondAttribute="centerY" id="Ob2-HC-9fZ"/>
+                        <constraint firstAttribute="trailing" secondItem="82C-eB-YSm" secondAttribute="trailing" id="ZNM-EG-lMF"/>
+                        <constraint firstItem="82C-eB-YSm" firstAttribute="top" secondItem="XQW-fh-iAK" secondAttribute="top" id="fVd-mC-lJb"/>
+                        <constraint firstAttribute="trailing" secondItem="uai-rn-USL" secondAttribute="trailing" constant="5" id="m9q-Be-RnX"/>
+                        <constraint firstItem="517-43-YWX" firstAttribute="top" secondItem="XQW-fh-iAK" secondAttribute="top" id="w3b-Ax-OLz"/>
+                        <constraint firstAttribute="bottom" secondItem="82C-eB-YSm" secondAttribute="bottom" id="z3E-UX-6yB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XQW-fh-iAK" firstAttribute="top" secondItem="mxF-Lm-IXN" secondAttribute="bottom" constant="12" id="0Pv-VD-WDO"/>
+                <constraint firstItem="mxF-Lm-IXN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="CPc-tQ-If1"/>
+                <constraint firstItem="mxF-Lm-IXN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="D32-We-s4d"/>
+                <constraint firstAttribute="bottom" secondItem="XQW-fh-iAK" secondAttribute="bottom" constant="2" id="GUX-YC-rmn"/>
+                <constraint firstItem="XQW-fh-iAK" firstAttribute="leading" secondItem="mxF-Lm-IXN" secondAttribute="leading" id="gvb-AP-64R"/>
+                <constraint firstItem="XQW-fh-iAK" firstAttribute="trailing" secondItem="mxF-Lm-IXN" secondAttribute="trailing" id="snU-up-pl0"/>
+                <constraint firstAttribute="trailing" secondItem="mxF-Lm-IXN" secondAttribute="trailing" constant="10" id="tXn-7d-6d7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="140.57971014492756" y="55.580357142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="calendar" width="36" height="36"/>
+    </resources>
+</document>
