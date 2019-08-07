@@ -70,7 +70,7 @@ public class BaseDocumentPickerView : UIView {
     
     func selectFromLibrary() {
         picker.allowsEditing = false
-        picker.delegate = self
+        picker.delegate = self as! UIImagePickerControllerDelegate & UINavigationControllerDelegate
         picker.sourceType = .photoLibrary
         picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
         vc.present(picker, animated: true, completion: nil)
