@@ -93,7 +93,7 @@ public class BaseDocumentPickerView : UIView {
     
 }
 
-extension BaseDocumentPickerView : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+/*extension BaseDocumentPickerView : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
     
@@ -137,3 +137,4 @@ extension BaseDocumentPickerView : UIImagePickerControllerDelegate, UINavigation
 //        return newImage!
 //    }
 }
+*/
