@@ -19,7 +19,13 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/Ansh-Singh/ABC.git", :tag => "#{spec.version}"}
 
 
-  spec.source_files  =  "TestAug7/**/*.{h,m,swift}"
+  #spec.source_files  =  "TestAug7/**/*"
+
+
+
+ #spec.source_files = "TestAug7/**/*"
+
+ #spec.ios.resource_bundle = { 'TestAug7' => 'Resources/**/*.xcassets' }
 
 spec.dependency "MBProgressHUD"
 spec.dependency "IQKeyboardManagerSwift"
