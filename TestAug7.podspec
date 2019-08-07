@@ -1,7 +1,6 @@
-
 Pod::Spec.new do |spec|
 
-  spec.name         = "TestLib"
+  spec.name         = "TestAug7"
   spec.version      = "0.0.1"
   spec.summary      = "A library written in swift"
 
